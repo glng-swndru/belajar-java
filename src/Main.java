@@ -1,12 +1,15 @@
-public class Main {
+import java.util.Scanner;
 
+public class Main {
     public static void main(String[] args) {
 
-        System.out.println("I like Pizza");
-        System.out.println("I like you too!");
-        System.out.println("Nice Try");
+        Scanner scanner = new Scanner(System.in);
 
-        int age = 12;
-        System.out.println(age);
+        System.out.print("Enter your Name: ");
+        String name = scanner.nextLine();
+
+        System.out.println("Hello " + name);
+        scanner.close();
+
     }
 }
